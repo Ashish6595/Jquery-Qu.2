@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Accordion</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style>
+        .ui-accordion-header {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .ui-accordion-content {
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, voluptas?</p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nisi?</p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, illo?</p>
+        </div>
+    </div>
+
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    </script>
+
+</body>
+</html>
